@@ -1,0 +1,27 @@
+{
+  "PLAY": {
+    "type": "play",
+    "versionEnv": "${SERVICE-ID}_VERSION",
+    "pattern": "service.manager.serviceName=${SERVICE-ID}",
+    "hasMongo": false,
+    "hasServiceMappings": false,
+    "healthcheck": {
+      "url": "http://localhost:${port}/ping",
+      "response": ""
+    },
+    "sources": {
+      "extra_params": [
+        "-Drun.mode=Prod"
+      ],
+      "cmd": [
+        "sbt",
+        "update",
+        "start"
+      ]
+    },
+    "binary": {
+      "ext": "tgz",
+      "repo": "bintray"
+    }
+  }
+}

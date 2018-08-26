@@ -1,0 +1,26 @@
+{
+  "nexus": {
+    "host": "",
+    "repoMappings": {
+      "RELEASE": "",
+      "SNAPSHOT": ""
+    }
+  },
+  "bintray": {
+    "protocol": "https",
+    "host": "dl.bintray.com",
+    "repoMappings": {
+      "RELEASE": "cjww-development/releases",
+      "SNAPSHOT": "cjww-development/releases"
+    }
+  },
+  "sbt": {
+    "wrapper": {
+      "cmd": [
+        "./sbt",
+        "run"
+      ]
+    }
+  },
+  "playExtractionDir": "/var/tmp"
+}

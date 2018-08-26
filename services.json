@@ -1,0 +1,23 @@
+{
+  "ADMIN_FE" : {
+    "name" : "administration-frontend",
+    "template" : "PLAY",
+    "frontend" : true,
+    "location" : "/administration-frontend",
+    "defaultPort" : 9875,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/administration-frontend.git"
+    },
+    "binary" : {
+      "artifact" : "administration-frontend_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "administration-frontend",
+      "cmd" : [
+        "./administration-frontend/bin/administration-frontend",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
+  }
+}
