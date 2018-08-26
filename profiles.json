@@ -1,4 +1,4 @@
 {
   "ALL" : [ "*" ],
-  "ADMIN_ALL" : [ "ADMIN_FE" ]
+  "ADMIN_ALL" : [ "ADMIN_FE", "ADMIN" ]
 }

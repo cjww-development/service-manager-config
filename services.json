@@ -19,5 +19,25 @@
         "-J-Xms64m"
       ]
     }
+  },
+  "ADMIN" : {
+    "name" : "administration",
+    "template" : "PLAY",
+    "location" : "/administration",
+    "defaultPort" : 9876,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/administration.git"
+    },
+    "binary" : {
+      "artifact" : "administration_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "administration",
+      "cmd" : [
+        "./administration/bin/administration",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
   }
 }
