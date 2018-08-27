@@ -1,8 +1,8 @@
 {
-  "auth-service" : "AUTH_SERVICE",
+  "auth-service" : "AUTH_FE",
   "deversity-frontend" : "DEVERSITY_FE",
-  "auth-microservice" : "AUTH_MICRO",
-  "accounts-microservice" : "ACC_MICRO",
+  "auth-microservice" : "AUTH",
+  "accounts-microservice" : "ACCOUNTS",
   "deversity" : "DEVERSITY",
   "session-store" : "SESSION_STORE",
   "administration-frontend" : "ADMIN_FE",
