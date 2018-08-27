@@ -1,4 +1,6 @@
 {
   "ALL" : [ "*" ],
-  "ADMIN_ALL" : [ "ADMIN_FE", "ADMIN" ]
+  "ADMIN_ALL" : [ "ADMIN_FE", "ADMIN" ],
+  "DEVERSITY_ALL" : [ "DEVERSITY_FE", "AUTH_FE", "AUTH", "ACCOUNTS", "DEVERSITY", "SESSION_STORE" ],
+  "AUTH_ALL" : [ "AUTH_FE", "AUTH", "ACCOUNTS", "SESSION_STORE" ]
 }

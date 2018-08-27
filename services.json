@@ -39,5 +39,125 @@
         "-J-Xms64m"
       ]
     }
+  },
+  "SESSION_STORE" : {
+    "name" : "session-store",
+    "template" : "PLAY",
+    "location" : "/session-store",
+    "defaultPort" : 8400,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/session-store.git"
+    },
+    "binary" : {
+      "artifact" : "session-store_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "session-store",
+      "cmd" : [
+        "./session-store/bin/session-store",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
+  },
+  "DEVERSITY" : {
+    "name" : "deversity",
+    "template" : "PLAY",
+    "location" : "/deversity",
+    "defaultPort" : 9973,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/deversity.git"
+    },
+    "binary" : {
+      "artifact" : "deversity_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "deversity",
+      "cmd" : [
+        "./deversity/bin/deversity",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
+  },
+  "ACCOUNTS" : {
+    "name" : "accounts-microservice",
+    "template" : "PLAY",
+    "location" : "/accounts-microservice",
+    "defaultPort" : 8603,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/accounts-microservice.git"
+    },
+    "binary" : {
+      "artifact" : "accounts-microservice_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "accounts-microservice",
+      "cmd" : [
+        "./accounts-microservice/bin/accounts-microservice",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
+  },
+  "AUTH" : {
+    "name" : "auth-microservice",
+    "template" : "PLAY",
+    "location" : "/auth-microservice",
+    "defaultPort" : 8601,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/auth-microservice.git"
+    },
+    "binary" : {
+      "artifact" : "auth-microservice_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "auth-microservice",
+      "cmd" : [
+        "./auth-microservice/bin/auth-microservice",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
+  },
+  "AUTH_FE" : {
+    "name" : "auth-service",
+    "template" : "PLAY",
+    "location" : "/auth-service",
+    "defaultPort" : 8602,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/auth-service.git"
+    },
+    "binary" : {
+      "artifact" : "auth-service_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "auth-service",
+      "cmd" : [
+        "./auth-service/bin/auth-service",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
+  },
+  "DEVERSITY_FE" : {
+    "name" : "deversity-frontend",
+    "template" : "PLAY",
+    "location" : "/deversity-frontend",
+    "defaultPort" : 9986,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/deversity-frontend.git"
+    },
+    "binary" : {
+      "artifact" : "deversity-frontend_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "deversity-frontend",
+      "cmd" : [
+        "./auth-service/bin/deversity-frontend",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
   }
 }
