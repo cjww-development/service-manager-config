@@ -153,7 +153,7 @@
       "groupId" : "com/cjww-dev/apps/",
       "destinationSubdir" : "deversity-frontend",
       "cmd" : [
-        "./auth-service/bin/deversity-frontend",
+        "./deversity-frontend/bin/deversity-frontend",
         "-Dconfig.resource=application.conf",
         "-J-Xmx256m",
         "-J-Xms64m"
