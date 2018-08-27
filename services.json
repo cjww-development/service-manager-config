@@ -135,6 +135,7 @@
       "cmd" : [
         "./auth-service/bin/auth-service",
         "-Dconfig.resource=application.conf",
+        "-Dfeatures.DEVERSITY=true",
         "-J-Xmx256m",
         "-J-Xms64m"
       ]
