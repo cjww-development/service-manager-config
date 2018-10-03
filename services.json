@@ -39,5 +39,45 @@
         "-J-Xms64m"
       ]
     }
+  },
+  "SESSION_STORE" : {
+    "name" : "session-store",
+    "template" : "PLAY",
+    "location" : "/session-store",
+    "defaultPort" : 8400,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/session-store.git"
+    },
+    "binary" : {
+      "artifact" : "session-store_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "session-store",
+      "cmd" : [
+        "./session-store/bin/session-store",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
+  },
+  "DEVERSITY" : {
+    "name" : "deversity",
+    "template" : "PLAY",
+    "location" : "/deversity",
+    "defaultPort" : 9973,
+    "sources" : {
+      "repo" : "git@github.com:cjww-development/deversity.git"
+    },
+    "binary" : {
+      "artifact" : "deversity_2.12",
+      "groupId" : "com/cjww-dev/apps/",
+      "destinationSubdir" : "deversity",
+      "cmd" : [
+        "./deversity/bin/deversity",
+        "-Dconfig.resource=application.conf",
+        "-J-Xmx256m",
+        "-J-Xms64m"
+      ]
+    }
   }
 }
